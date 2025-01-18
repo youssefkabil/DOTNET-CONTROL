@@ -4,6 +4,30 @@
     ViewData["Title"] = "Categories";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+<style>
+    #viewCategoryBooks ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .list-group-item {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+
+        .list-group-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .list-group-item span {
+            font-size: 14px;
+            color: #495057;
+        }
+</style>
+
 
 <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
     <div class="breadcrumb-title pe-3">Library</div>
@@ -110,7 +134,16 @@
                     <h4 class="text-primary mb-3" id="viewCategoryName"></h4>
                     <hr class="my-2">
                     <h6 class="text-muted mb-2">Books:</h6>
-                    <p class="mb-0" id="viewCategoryBooks"></p>
+                    <div id="viewCategoryBooks">
+                        <ul class="list-group">
+                            <!-- Example entry; dynamically populated -->
+                            <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                <span>Book Title</span>
+                                <span class="badge bg-primary rounded-pill">Author Name</span>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
                 <div class="text-end">
                     <button type="button" class="btn btn-outline-primary px-4" data-bs-dismiss="modal">
@@ -217,11 +250,32 @@ function confirmDeleteCategory(id, name) {
     });
 }
 
-function viewCategory(element) {
-    document.getElementById('viewCategoryName').textContent = element.getAttribute('data-name');
-    document.getElementById('viewCategoryBooks').textContent = element.getAttribute('data-books') || 'No books available';
-    new bootstrap.Modal(document.getElementById('viewCategoryModal')).show();
-}
+    function viewCategory(element) {
+        document.getElementById('viewCategoryName').textContent = element.getAttribute('data-name');
+
+        const books = element.getAttribute('data-books').split(", ");
+        const booksList = document.getElementById('viewCategoryBooks');
+        booksList.innerHTML = '';
+
+        if (books.length > 0 && books[0] !== "") {
+            const ul = document.createElement('ul');
+            ul.className = 'list-group';
+
+            books.forEach(book => {
+                const li = document.createElement('li');
+                li.className = 'list-group-item list-group-item-action d-flex justify-content-between align-items-center';
+                li.textContent = book.trim();
+                ul.appendChild(li);
+            });
+
+            booksList.appendChild(ul);
+        } else {
+            booksList.innerHTML = '<p class="text-muted">No books available</p>';
+        }
+
+        new bootstrap.Modal(document.getElementById('viewCategoryModal')).show();
+    }
+
 
 function editCategory(element) {
     document.getElementById('editCategoryId').value = element.getAttribute('data-id');

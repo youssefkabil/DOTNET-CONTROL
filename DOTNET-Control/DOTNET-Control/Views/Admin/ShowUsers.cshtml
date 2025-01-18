@@ -1,0 +1,205 @@
+﻿@model IEnumerable<DOTNET_Control.Models.ApplicationUser>
+
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<style>
+    #viewUserBooks ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .list-group-item {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+
+        .list-group-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .list-group-item span {
+            font-size: 14px;
+            color: #495057;
+        }
+
+</style>
+<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+    <div class="breadcrumb-title pe-3">User Management</div>
+    <div class="ps-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 p-0">
+                <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a></li>
+                <li class="breadcrumb-item active" aria-current="page">Users List</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header py-3">
+        <h5 class="mb-0">Users</h5>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table align-middle table-striped">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Is Admin</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (!Model.Any())
+                    {
+                        <tr>
+                            <td colspan="5" class="text-center">No users available.</td>
+                        </tr>
+                    }
+                    else
+                    {
+                        @foreach (var user in Model)
+                        {
+                            <tr>
+                                <td>@user.UserName</td>
+                                <td>@user.Email</td>
+                                <td>@user.PhoneNumber</td>
+                                <td>@user.isAdmin</td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3 fs-6">
+                                        <a href="javascript:;" class="text-primary"
+                                           onclick="viewUser(this)"
+                                           data-username="@user.UserName"
+                                           data-email="@user.Email"
+                                           data-phone="@user.PhoneNumber"
+                                           data-isadmin="@user.isAdmin"
+                                           data-books="@string.Join(", ", user.UserBooks?.Select(ub => ub.Book.Title) ?? new List<string>())"
+                                           title="View detail">
+                                            <i class="bi bi-eye-fill"></i>
+                                        </a>
+                                        <a href="javascript:;" class="text-danger"
+                                           onclick="confirmDeleteUser('@user.Id', '@user.UserName')">
+                                            <i class="bi bi-trash-fill" title="Delete"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- View User Modal -->
+<div class="modal fade" id="viewUserModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold">
+                    <i class="bi bi-person me-2"></i>User Details
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="bg-light p-3 rounded mb-3">
+                    <h4 class="text-primary mb-3" id="viewUserName"></h4>
+                    <p><strong>Email:</strong> <span id="viewUserEmail"></span></p>
+                    <p><strong>Phone Number:</strong> <span id="viewUserPhone"></span></p>
+                    <p><strong>Is Admin:</strong> <span id="viewUserIsAdmin"></span></p>
+                    <hr class="my-2">
+                    <h6 class="text-muted mb-2">Books:</h6>
+                    <div id="viewUserBooks">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                <!-- Example entry; dynamically populated -->
+                                <span>Book Title</span>
+                                <span class="badge bg-primary rounded-pill">Author Name</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-primary px-4" data-bs-dismiss="modal">
+                        <i class="bi bi-x-circle me-2"></i>Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+        function viewUser(element) {
+        document.getElementById('viewUserName').textContent = element.getAttribute('data-username');
+        document.getElementById('viewUserEmail').textContent = element.getAttribute('data-email');
+        document.getElementById('viewUserPhone').textContent = element.getAttribute('data-phone');
+        document.getElementById('viewUserIsAdmin').textContent = element.getAttribute('data-isadmin');
+
+        const books = element.getAttribute('data-books').split(", ");
+        const booksList = document.getElementById('viewUserBooks');
+        booksList.innerHTML = '';
+
+        if (books.length > 0 && books[0] !== "") {
+            const ul = document.createElement('ul');
+            ul.className = 'list-group';
+
+            books.forEach(book => {
+                const li = document.createElement('li');
+                li.className = 'list-group-item list-group-item-action d-flex justify-content-between align-items-center';
+                li.textContent = book.trim();
+                ul.appendChild(li);
+            });
+
+            booksList.appendChild(ul);
+        } else {
+            booksList.textContent = 'No books available';
+        }
+
+        new bootstrap.Modal(document.getElementById('viewUserModal')).show();
+    }
+
+
+    function confirmDeleteUser(id, username) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: `Do you want to delete "${username}"?`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#dc3545',
+            cancelButtonColor: '#6c757d',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch(`/Admin/DeleteUser/${id}`, {
+                    method: 'DELETE'
+                })
+                .then(response => {
+                    if (response.ok) {
+                        Swal.fire(
+                            'Deleted!',
+                            'The user has been deleted.',
+                            'success'
+                        ).then(() => {
+                            window.location.reload();
+                        });
+                    } else {
+                        Swal.fire(
+                            'Error!',
+                            'Something went wrong.',
+                            'error'
+                        );
+                    }
+                });
+            }
+        });
+    }
+</script>

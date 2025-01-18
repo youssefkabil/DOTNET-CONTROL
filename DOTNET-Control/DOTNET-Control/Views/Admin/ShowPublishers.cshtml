@@ -92,6 +92,7 @@
 </div>
 
 <!-- View Publisher Modal -->
+<!-- View Publisher Modal -->
 <div class="modal fade" id="viewPublisherModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -106,7 +107,11 @@
                     <h4 class="text-primary mb-3" id="viewPublisherName"></h4>
                     <hr class="my-2">
                     <h6 class="text-muted mb-2">Books:</h6>
-                    <p class="mb-0" id="viewPublisherBooks"></p>
+                    <div id="viewPublisherBooks">
+                        <ul class="list-group">
+                            <!-- Dynamically populated list will go here -->
+                        </ul>
+                    </div>
                 </div>
                 <div class="text-end">
                     <button type="button" class="btn btn-outline-primary px-4" data-bs-dismiss="modal">
@@ -212,9 +217,29 @@
         });
     }
 
-    function viewPublisher(element) {
+        function viewPublisher(element) {
         document.getElementById('viewPublisherName').textContent = element.getAttribute('data-name');
-        document.getElementById('viewPublisherBooks').textContent = element.getAttribute('data-books') || 'No books available';
+
+        const books = element.getAttribute('data-books').split(", ");
+        const booksList = document.getElementById('viewPublisherBooks');
+        booksList.innerHTML = '';  // Clear any previous content
+
+        if (books.length > 0 && books[0] !== "") {
+            const ul = document.createElement('ul');
+            ul.className = 'list-group';
+
+            books.forEach(book => {
+                const li = document.createElement('li');
+                li.className = 'list-group-item list-group-item-action d-flex justify-content-between align-items-center';
+                li.textContent = book.trim();
+                ul.appendChild(li);
+            });
+
+            booksList.appendChild(ul);
+        } else {
+            booksList.textContent = 'No books available';
+        }
+
         new bootstrap.Modal(document.getElementById('viewPublisherModal')).show();
     }
 

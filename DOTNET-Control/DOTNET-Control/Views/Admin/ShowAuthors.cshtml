@@ -4,7 +4,27 @@
     ViewData["Title"] = "Authors";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+<style>
+    #viewBooks ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 
+    .list-group-item {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #495057;
+    }
+
+        .list-group-item:last-child {
+            margin-bottom: 0;
+        }
+
+</style>
 <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
     <div class="breadcrumb-title pe-3">Library</div>
     <div class="ps-3">
@@ -109,7 +129,11 @@
                     <h4 class="text-primary mb-3" id="viewName"></h4>
                     <hr class="my-2">
                     <h6 class="text-muted mb-2">Books:</h6>
-                    <p class="mb-0" id="viewBooks"></p>
+                    <div id="viewBooks">
+                        <ul class="list-group">
+                            <!-- Dynamic content will go here -->
+                        </ul>
+                    </div>
                 </div>
                 <div class="text-end">
                     <button type="button" class="btn btn-outline-primary px-4" data-bs-dismiss="modal">
@@ -216,11 +240,31 @@
         });
     }
 
-    function viewAuthor(element) {
+        function viewAuthor(element) {
         document.getElementById('viewName').textContent = element.getAttribute('data-name');
-        document.getElementById('viewBooks').textContent = element.getAttribute('data-books') || 'No books available';
+        const booksData = element.getAttribute('data-books').split(", ");
+        const booksList = document.getElementById('viewBooks');
+        booksList.innerHTML = '';
+
+        if (booksData.length > 0 && booksData[0] !== '') {
+            const ul = document.createElement('ul');
+            ul.className = 'list-group';
+
+            booksData.forEach(book => {
+                const li = document.createElement('li');
+                li.className = 'list-group-item list-group-item-action d-flex justify-content-between align-items-center';
+                li.textContent = book.trim();
+                ul.appendChild(li);
+            });
+
+            booksList.appendChild(ul);
+        } else {
+            booksList.textContent = 'No books available';
+        }
+
         new bootstrap.Modal(document.getElementById('viewAuthorModal')).show();
     }
+
 
     function editAuthor(element) {
         document.getElementById('editAuthorId').value = element.getAttribute('data-id');

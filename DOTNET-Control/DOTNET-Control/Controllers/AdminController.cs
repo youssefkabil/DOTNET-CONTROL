@@ -292,5 +292,33 @@ namespace DOTNET_Control.Controllers
             return Ok();
         }
 
+
+        [Route("Users")]
+        public async Task<IActionResult> ShowUsers()
+        {
+            var users = await _context.Users
+                .Include(u => u.UserBooks)
+                .ThenInclude(ub => ub.Book)
+                .ToListAsync();
+
+            return View(users);
+        }
+
+        [HttpDelete]
+        [Route("DeleteUser/{id}")]
+        public async Task<IActionResult> DeleteUser(string id)
+        {
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
     }
 }
