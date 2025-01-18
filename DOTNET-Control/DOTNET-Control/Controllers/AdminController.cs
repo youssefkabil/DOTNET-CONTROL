@@ -235,7 +235,62 @@ namespace DOTNET_Control.Controllers
         {
             return _context.Categories.Any(e => e.Id == id);
         }
+        [HttpGet]
+        [Route("Publishers")]
+        public async Task<IActionResult> ShowPublishers()
+        {
+            var publishers = await _context.Publishers.Include(p => p.Books).ToListAsync();
+            
+            return View(publishers);
+        }
 
+        [HttpPost]
+        [Route("CreatePublisher")]
+        public async Task<IActionResult> CreatePublisher([FromBody] Publisher publisher)
+        {
+            _context.Add(publisher);
+            await _context.SaveChangesAsync();
+            return Ok();
+        }
+
+
+        [HttpPost]
+        [Route("EditPublisher")]
+        public async Task<IActionResult> EditPublisher([FromBody] Publisher publisher)
+        {
+            try
+            {
+                _context.Update(publisher);
+                await _context.SaveChangesAsync();
+                return Ok();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!PublisherExists(publisher.Id))
+                {
+                    return NotFound();
+                }
+                throw;
+            }
+        }
+        private bool PublisherExists(int id)
+        {
+            return _context.Publishers.Any(e => e.Id == id);
+        }
+        [HttpDelete]
+        [Route("DeletePublisher/{id}")]
+        public async Task<IActionResult> DeletePublisher(int id)
+        {
+            var publisher = await _context.Publishers.FindAsync(id);
+            if (publisher == null)
+            {
+                return NotFound();
+            }
+
+            _context.Publishers.Remove(publisher);
+            await _context.SaveChangesAsync();
+            return Ok();
+        }
 
     }
 }

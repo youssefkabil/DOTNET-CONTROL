@@ -1,0 +1,289 @@
+﻿@model IEnumerable<DOTNET_Control.Models.Publisher>
+
+@{
+    ViewData["Title"] = "Publishers";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+    <div class="breadcrumb-title pe-3">Library</div>
+    <div class="ps-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 p-0">
+                <li class="breadcrumb-item">
+                    <a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Publishers List</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header py-3">
+        <div class="row align-items-center m-0">
+            <div class="col-md-3 col-12 me-auto mb-md-0 mb-3">
+                <h5 class="mb-0">Publishers</h5>
+            </div>
+            <div class="col-lg-3 col-xl-2">
+                <button type="button" class="btn btn-primary mb-3 mb-lg-0" onclick="showCreatePublisherModal()">
+                    <i class="bi bi-plus-square-fill"></i> Add Publisher
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table align-middle table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Books Count</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (!Model.Any())
+                    {
+                        <tr>
+                            <td colspan="3" class="text-center">No publishers available.</td>
+                        </tr>
+                    }
+                    else
+                    {
+                        @foreach (var publisher in Model)
+                        {
+                            <tr>
+                                <td>@publisher.Name</td>
+                                <td>@publisher.Books?.Count</td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3 fs-6">
+                                        <a href="javascript:;" class="text-primary"
+                                           onclick="viewPublisher(this)"
+                                           data-name="@publisher.Name"
+                                           data-books="@string.Join(", ", publisher.Books?.Select(b => b.Title) ?? new List<string>())"
+                                           data-bs-toggle="tooltip"
+                                           data-bs-placement="bottom"
+                                           title="View detail">
+                                            <i class="bi bi-eye-fill"></i>
+                                        </a>
+                                        <a href="javascript:;" class="text-warning"
+                                           onclick="editPublisher(this)"
+                                           data-id="@publisher.Id"
+                                           data-name="@publisher.Name"
+                                           data-bs-toggle="tooltip"
+                                           data-bs-placement="bottom"
+                                           title="Edit info">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </a>
+                                        <a href="javascript:;" class="text-danger"
+                                           onclick="confirmDeletePublisher(@publisher.Id, `@publisher.Name`)">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- View Publisher Modal -->
+<div class="modal fade" id="viewPublisherModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold">
+                    <i class="bi bi-building me-2"></i>Publisher Details
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="bg-light p-3 rounded mb-3">
+                    <h4 class="text-primary mb-3" id="viewPublisherName"></h4>
+                    <hr class="my-2">
+                    <h6 class="text-muted mb-2">Books:</h6>
+                    <p class="mb-0" id="viewPublisherBooks"></p>
+                </div>
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-primary px-4" data-bs-dismiss="modal">
+                        <i class="bi bi-x-circle me-2"></i>Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Create Publisher Modal -->
+<div class="modal fade" id="createPublisherModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold">
+                    <i class="bi bi-building-add me-2"></i>Create Publisher
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="createPublisherForm">
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" id="createPublisherName" name="Name" class="form-control" required>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Create Publisher</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Publisher Modal -->
+<div class="modal fade" id="editPublisherModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Publisher</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="editPublisherForm">
+                    <input type="hidden" id="editPublisherId" name="Id" />
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" id="editPublisherName" name="Name" class="form-control" required>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+        function showCreatePublisherModal() {
+        document.getElementById('createPublisherName').value = '';
+        new bootstrap.Modal(document.getElementById('createPublisherModal')).show();
+    }
+
+    function confirmDeletePublisher(id, name) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: `Do you want to delete "${name}"?`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#dc3545',
+            cancelButtonColor: '#6c757d',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch(`DeletePublisher/${id}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        Swal.fire(
+                            'Deleted!',
+                            'The publisher has been deleted.',
+                            'success'
+                        ).then(() => {
+                            window.location.reload();
+                        });
+                    } else {
+                        Swal.fire(
+                            'Error!',
+                            'Something went wrong.',
+                            'error'
+                        );
+                    }
+                });
+            }
+        });
+    }
+
+    function viewPublisher(element) {
+        document.getElementById('viewPublisherName').textContent = element.getAttribute('data-name');
+        document.getElementById('viewPublisherBooks').textContent = element.getAttribute('data-books') || 'No books available';
+        new bootstrap.Modal(document.getElementById('viewPublisherModal')).show();
+    }
+
+    function editPublisher(element) {
+        document.getElementById('editPublisherId').value = element.getAttribute('data-id');
+        document.getElementById('editPublisherName').value = element.getAttribute('data-name');
+        new bootstrap.Modal(document.getElementById('editPublisherModal')).show();
+    }
+
+    document.getElementById('createPublisherForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+        const publisherData = Object.fromEntries(formData);
+
+        fetch('/Admin/CreatePublisher', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(publisherData)
+        })
+        .then(response => {
+            if (response.ok) {
+                Swal.fire(
+                    'Created!',
+                    'The publisher has been created successfully.',
+                    'success'
+                ).then(() => {
+                    window.location.reload();
+                });
+            } else {
+                Swal.fire(
+                    'Error!',
+                    'Something went wrong.',
+                    'error'
+                );
+            }
+        });
+    });
+
+    document.getElementById('editPublisherForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+        const publisherData = Object.fromEntries(formData);
+
+        fetch('EditPublisher', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(publisherData)
+        })
+        .then(response => {
+            if (response.ok) {
+                Swal.fire(
+                    'Updated!',
+                    'The publisher has been updated successfully.',
+                    'success'
+                ).then(() => {
+                    window.location.reload();
+                });
+            } else {
+                Swal.fire(
+                    'Error!',
+                    'Something went wrong.',
+                    'error'
+                );
+            }
+        });
+    });
+
+</script>
