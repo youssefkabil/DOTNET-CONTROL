@@ -1,0 +1,294 @@
+﻿@model IEnumerable<DOTNET_Control.Models.Category>
+
+@{
+    ViewData["Title"] = "Categories";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+    <div class="breadcrumb-title pe-3">Library</div>
+    <div class="ps-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 p-0">
+                <li class="breadcrumb-item">
+                    <a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Categories List</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header py-3">
+        <div class="row align-items-center m-0">
+            <div class="col-md-3 col-12 me-auto mb-md-0 mb-3">
+                <h5 class="mb-0">Categories</h5>
+            </div>
+            <div class="col-lg-3 col-xl-2">
+                <button type="button" class="btn btn-primary mb-3 mb-lg-0" onclick="showCreateCategoryModal()">
+                    <i class="bi bi-plus-square-fill"></i> Add Category
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table align-middle table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Books Count</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (!Model.Any())
+                    {
+                        <tr>
+                            <td colspan="3" class="text-center">No categories available.</td>
+                        </tr>
+                    }
+                    else
+                    {
+                        @foreach (var category in Model)
+                        {
+                            <tr>
+                                <td>@category.Name</td>
+                                <td>@category.Books?.Count</td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3 fs-6">
+                                        <a href="javascript:;" class="text-primary"
+                                           onclick="viewCategory(this)"
+                                           data-name="@category.Name"
+                                           data-books="@string.Join(", ", category.Books?.Select(b => b.Title) ?? new List<string>())"
+                                           data-bs-toggle="tooltip"
+                                           data-bs-placement="bottom"
+                                           title="View detail">
+                                            <i class="bi bi-eye-fill"></i>
+                                        </a>
+                                        <a href="javascript:;" class="text-warning"
+                                           onclick="editCategory(this)"
+                                           data-id="@category.Id"
+                                           data-name="@category.Name"
+                                           data-bs-toggle="tooltip"
+                                           data-bs-placement="bottom"
+                                           title="Edit info">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </a>
+                                        <a href="javascript:;" class="text-danger"
+                                           onclick="confirmDeleteCategory(@category.Id, `@category.Name`)"
+                                           data-bs-toggle="tooltip"
+                                           data-bs-placement="bottom"
+                                           title="Delete">
+                                            <i class="bi bi-trash-fill"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Modals and JavaScript for handling categories go here (similar to authors) -->
+<!-- View Category Modal -->
+<div class="modal fade" id="viewCategoryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold">
+                    <i class="bi bi-folder me-2"></i>Category Details
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="bg-light p-3 rounded mb-3">
+                    <h4 class="text-primary mb-3" id="viewCategoryName"></h4>
+                    <hr class="my-2">
+                    <h6 class="text-muted mb-2">Books:</h6>
+                    <p class="mb-0" id="viewCategoryBooks"></p>
+                </div>
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-primary px-4" data-bs-dismiss="modal">
+                        <i class="bi bi-x-circle me-2"></i>Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Create Category Modal -->
+<div class="modal fade" id="createCategoryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold">
+                    <i class="bi bi-folder-plus me-2"></i>Create Category
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="createCategoryForm">
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" id="createCategoryName" name="Name" class="form-control" required>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Create Category</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Category Modal -->
+<div class="modal fade" id="editCategoryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Category</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="editCategoryForm">
+                    <input type="hidden" id="editCategoryId" name="Id" />
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" id="editCategoryName" name="Name" class="form-control" required>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showCreateCategoryModal() {
+    document.getElementById('createCategoryName').value = '';
+    new bootstrap.Modal(document.getElementById('createCategoryModal')).show();
+}
+
+function confirmDeleteCategory(id, name) {
+    Swal.fire({
+        title: 'Are you sure?',
+        text: `Do you want to delete "${name}"?`,
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#dc3545',
+        cancelButtonColor: '#6c757d',
+        confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            fetch(`DeleteCategory/${id}`, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    Swal.fire(
+                        'Deleted!',
+                        'The category has been deleted.',
+                        'success'
+                    ).then(() => {
+                        window.location.reload();
+                    });
+                } else {
+                    Swal.fire(
+                        'Error!',
+                        'Something went wrong.',
+                        'error'
+                    );
+                }
+            });
+        }
+    });
+}
+
+function viewCategory(element) {
+    document.getElementById('viewCategoryName').textContent = element.getAttribute('data-name');
+    document.getElementById('viewCategoryBooks').textContent = element.getAttribute('data-books') || 'No books available';
+    new bootstrap.Modal(document.getElementById('viewCategoryModal')).show();
+}
+
+function editCategory(element) {
+    document.getElementById('editCategoryId').value = element.getAttribute('data-id');
+    document.getElementById('editCategoryName').value = element.getAttribute('data-name');
+    new bootstrap.Modal(document.getElementById('editCategoryModal')).show();
+}
+
+document.getElementById('createCategoryForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const categoryData = Object.fromEntries(formData);
+
+    fetch('/Admin/CreateCategory', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(categoryData)
+    })
+    .then(response => {
+        if (response.ok) {
+            Swal.fire(
+                'Created!',
+                'The category has been created successfully.',
+                'success'
+            ).then(() => {
+                window.location.reload();
+            });
+        } else {
+            Swal.fire(
+                'Error!',
+                'Something went wrong.',
+                'error'
+            );
+        }
+    });
+});
+
+document.getElementById('editCategoryForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const categoryData = Object.fromEntries(formData);
+
+    fetch('EditCategory', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(categoryData)
+    })
+    .then(response => {
+        if (response.ok) {
+            Swal.fire(
+                'Updated!',
+                'The category has been updated successfully.',
+                'success'
+            ).then(() => {
+                window.location.reload();
+            });
+        } else {
+            Swal.fire(
+                'Error!',
+                'Something went wrong.',
+                'error'
+            );
+        }
+    });
+});
+
+</script>
