@@ -1,12 +1,316 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\migrations\\20250118003850_updateadminseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\migrations\\20250118003850_updateadminseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\data\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\data\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\migrations\\librarydbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\migrations\\librarydbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\areas\\identity\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\areas\\identity\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|c:\\users\\tuff\\desktop\\emsicycle\\s7\\dotnet\\dotnet-control\\dotnet-control\\dotnet-control\\models\\userbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A5AFD8C-8EF3-4C43-8C8E-4270A45F7B9B}|DOTNET-Control\\DOTNET-Control.csproj|solutionrelative:dotnet-control\\models\\userbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250118003850_UpdateAdminSeedData.cs",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Migrations\\20250118003850_UpdateAdminSeedData.cs",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Migrations\\20250118003850_UpdateAdminSeedData.cs",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Migrations\\20250118003850_UpdateAdminSeedData.cs",
+              "RelativeToolTip": "DOTNET-Control\\Migrations\\20250118003850_UpdateAdminSeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T00:38:50.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LibraryDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Migrations\\LibraryDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Migrations\\LibraryDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Migrations\\LibraryDbContextModelSnapshot.cs",
+              "RelativeToolTip": "DOTNET-Control\\Migrations\\LibraryDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAWwGMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T00:31:21.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "DOTNET-Control\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAlwGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T23:40:23.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DOTNET-Control\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T23:37:56.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "DOTNET-Control\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T22:58:16.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "DOTNET-Control\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAiwEwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T22:54:52.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "DOTNET-Control\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T22:52:37.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "DOTNET-Control\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T22:52:36.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "DOTNET-Control\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T22:52:34.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Program.cs",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Program.cs",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Program.cs",
+              "RelativeToolTip": "DOTNET-Control\\Program.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAADwvzQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T21:53:02.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LibraryDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Data\\LibraryDbContext.cs",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Data\\LibraryDbContext.cs",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Data\\LibraryDbContext.cs",
+              "RelativeToolTip": "DOTNET-Control\\Data\\LibraryDbContext.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAIwF4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T21:51:38.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\appsettings.json",
+              "RelativeDocumentMoniker": "DOTNET-Control\\appsettings.json",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\appsettings.json",
+              "RelativeToolTip": "DOTNET-Control\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-17T21:49:44.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserBook.cs",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Models\\UserBook.cs",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Models\\UserBook.cs",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Models\\UserBook.cs",
+              "RelativeToolTip": "DOTNET-Control\\Models\\UserBook.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T21:49:29.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "DOTNET-Control\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T21:49:02.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Models\\Category.cs",
+              "RelativeToolTip": "DOTNET-Control\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T21:48:37.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Publisher.cs",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Models\\Publisher.cs",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Models\\Publisher.cs",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Models\\Publisher.cs",
+              "RelativeToolTip": "DOTNET-Control\\Models\\Publisher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T21:48:00.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Author.cs",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Models\\Author.cs",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Models\\Author.cs",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Models\\Author.cs",
+              "RelativeToolTip": "DOTNET-Control\\Models\\Author.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T21:47:28.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "DOTNET-Control\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\Models\\Book.cs",
+              "RelativeToolTip": "DOTNET-Control\\Models\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T21:45:02.845Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
