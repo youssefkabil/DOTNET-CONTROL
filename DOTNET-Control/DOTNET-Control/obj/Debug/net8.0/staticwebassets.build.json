@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cCaWPkneoVc8DP5PYCJEUCGtMY7zb1Gjn8kfd/vuePA=",
+  "Hash": "5N/JELbx8GoQPezcbrI2emLBOlYxel6heewoFK5Ro7E=",
   "Source": "DOTNET-Control",
   "BasePath": "_content/DOTNET-Control",
   "Mode": "Default",
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vfz7806pqb",
-      "Integrity": "1ajI/g+9t3WJR87WaWgpHoNP63Y0bqRpgrTywBBXer8=",
+      "Fingerprint": "awp2ceblzw",
+      "Integrity": "ZpwhgBDcuB2VbWhcAde4/6XNxAd00Ftz5J/0jXXKrBw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\header-colors.css"
@@ -1543,8 +1543,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pmvhm0833r",
-      "Integrity": "YdBi1eqTJ0BlfiQctWlCYpfE0yeWdhvKrbDT53W1FqY=",
+      "Fingerprint": "7brdpvpjcl",
+      "Integrity": "g7Dr6kIPAjByM1FlZRg0VbR3rSmopmdB/c2y0ViTq58=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
@@ -13058,6 +13058,27 @@
       "OriginalItemSpec": "wwwroot\\images\\avatars\\avatar-9.png"
     },
     {
+      "Identity": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\images\\emsi.jpg",
+      "SourceId": "DOTNET-Control",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\",
+      "BasePath": "_content/DOTNET-Control",
+      "RelativePath": "images/emsi#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "clivcqwt9p",
+      "Integrity": "4ON6eGXz5pYj3KQ9KM9G5INUoaZk0vJjOOVfuVPspXA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\emsi.jpg"
+    },
+    {
       "Identity": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\images\\emsi.png",
       "SourceId": "DOTNET-Control",
       "SourceType": "Discovered",
@@ -14232,6 +14253,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "SourceId": "DOTNET-Control",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\",
+      "BasePath": "_content/DOTNET-Control",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-theme#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z4giugmkw0",
+      "Integrity": "zV9PFwSVxm/pFuTNckKIh9wgMQP8fXUcFf/7rL80aHs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Identity": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "SourceId": "DOTNET-Control",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\",
+      "BasePath": "_content/DOTNET-Control",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-theme.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5wl60yermk",
+      "Integrity": "VRy4P+cTamJkVbr669tBzZ91ZP77a2isRQLPSGmjuxE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "SourceId": "DOTNET-Control",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\",
+      "BasePath": "_content/DOTNET-Control",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-theme.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hncdx5t4mz",
+      "Integrity": "s7kj0ytsxBKSuSaMKmHfQZLxmh3qtRVzK1km6ig5kC0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "SourceId": "DOTNET-Control",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\",
+      "BasePath": "_content/DOTNET-Control",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-theme.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kfyfhdxh97",
+      "Integrity": "8E6OsUWRNMzsJQE8ChLBEDe/FbE48DnqxqzNic75ALo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
     },
     {
       "Identity": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
@@ -17672,6 +17777,51 @@
       ]
     },
     {
+      "Route": "css/header-colors.awp2ceblzw.css",
+      "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\css\\header-colors.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5958"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZpwhgBDcuB2VbWhcAde4/6XNxAd00Ftz5J/0jXXKrBw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 16:39:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "awp2ceblzw"
+        },
+        {
+          "Name": "label",
+          "Value": "css/header-colors.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZpwhgBDcuB2VbWhcAde4/6XNxAd00Ftz5J/0jXXKrBw="
+        }
+      ]
+    },
+    {
       "Route": "css/header-colors.css",
       "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\css\\header-colors.css",
       "Selectors": [],
@@ -17682,7 +17832,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5957"
+          "Value": "5958"
         },
         {
           "Name": "Content-Type",
@@ -17690,11 +17840,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1ajI/g+9t3WJR87WaWgpHoNP63Y0bqRpgrTywBBXer8=\""
+          "Value": "\"ZpwhgBDcuB2VbWhcAde4/6XNxAd00Ftz5J/0jXXKrBw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Aug 2021 07:28:23 GMT"
+          "Value": "Sat, 18 Jan 2025 16:39:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17704,52 +17854,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1ajI/g+9t3WJR87WaWgpHoNP63Y0bqRpgrTywBBXer8="
-        }
-      ]
-    },
-    {
-      "Route": "css/header-colors.vfz7806pqb.css",
-      "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\css\\header-colors.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5957"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1ajI/g+9t3WJR87WaWgpHoNP63Y0bqRpgrTywBBXer8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 04 Aug 2021 07:28:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vfz7806pqb"
-        },
-        {
-          "Name": "label",
-          "Value": "css/header-colors.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-1ajI/g+9t3WJR87WaWgpHoNP63Y0bqRpgrTywBBXer8="
+          "Value": "sha256-ZpwhgBDcuB2VbWhcAde4/6XNxAd00Ftz5J/0jXXKrBw="
         }
       ]
     },
@@ -18164,6 +18269,51 @@
       ]
     },
     {
+      "Route": "css/style.7brdpvpjcl.css",
+      "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31065"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g7Dr6kIPAjByM1FlZRg0VbR3rSmopmdB/c2y0ViTq58=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 17:01:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7brdpvpjcl"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g7Dr6kIPAjByM1FlZRg0VbR3rSmopmdB/c2y0ViTq58="
+        }
+      ]
+    },
+    {
       "Route": "css/style.css",
       "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\css\\style.css",
       "Selectors": [],
@@ -18174,7 +18324,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "31097"
+          "Value": "31065"
         },
         {
           "Name": "Content-Type",
@@ -18182,11 +18332,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YdBi1eqTJ0BlfiQctWlCYpfE0yeWdhvKrbDT53W1FqY=\""
+          "Value": "\"g7Dr6kIPAjByM1FlZRg0VbR3rSmopmdB/c2y0ViTq58=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Aug 2021 06:35:50 GMT"
+          "Value": "Sat, 18 Jan 2025 17:01:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18196,52 +18346,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-YdBi1eqTJ0BlfiQctWlCYpfE0yeWdhvKrbDT53W1FqY="
-        }
-      ]
-    },
-    {
-      "Route": "css/style.pmvhm0833r.css",
-      "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\css\\style.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "31097"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YdBi1eqTJ0BlfiQctWlCYpfE0yeWdhvKrbDT53W1FqY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 10 Aug 2021 06:35:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pmvhm0833r"
-        },
-        {
-          "Name": "label",
-          "Value": "css/style.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YdBi1eqTJ0BlfiQctWlCYpfE0yeWdhvKrbDT53W1FqY="
+          "Value": "sha256-g7Dr6kIPAjByM1FlZRg0VbR3rSmopmdB/c2y0ViTq58="
         }
       ]
     },
@@ -65611,6 +65716,88 @@
       ]
     },
     {
+      "Route": "images/emsi.clivcqwt9p.jpg",
+      "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\images\\emsi.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7105"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4ON6eGXz5pYj3KQ9KM9G5INUoaZk0vJjOOVfuVPspXA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 16:04:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "clivcqwt9p"
+        },
+        {
+          "Name": "label",
+          "Value": "images/emsi.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4ON6eGXz5pYj3KQ9KM9G5INUoaZk0vJjOOVfuVPspXA="
+        }
+      ]
+    },
+    {
+      "Route": "images/emsi.jpg",
+      "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\images\\emsi.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7105"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4ON6eGXz5pYj3KQ9KM9G5INUoaZk0vJjOOVfuVPspXA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 16:04:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4ON6eGXz5pYj3KQ9KM9G5INUoaZk0vJjOOVfuVPspXA="
+        }
+      ]
+    },
+    {
       "Route": "images/emsi.png",
       "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\images\\emsi.png",
       "Selectors": [],
@@ -70154,6 +70341,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-a5KlgysZ4fQXw4rzIvXDHErFDPeHRSLccP7kX6HuvSQ="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/css/bootstrap-theme.css",
+      "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26135"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zV9PFwSVxm/pFuTNckKIh9wgMQP8fXUcFf/7rL80aHs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 15:48:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zV9PFwSVxm/pFuTNckKIh9wgMQP8fXUcFf/7rL80aHs="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/css/bootstrap-theme.css.5wl60yermk.map",
+      "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VRy4P+cTamJkVbr669tBzZ91ZP77a2isRQLPSGmjuxE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 15:48:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5wl60yermk"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/css/bootstrap-theme.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VRy4P+cTamJkVbr669tBzZ91ZP77a2isRQLPSGmjuxE="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/css/bootstrap-theme.css.map",
+      "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VRy4P+cTamJkVbr669tBzZ91ZP77a2isRQLPSGmjuxE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 15:48:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VRy4P+cTamJkVbr669tBzZ91ZP77a2isRQLPSGmjuxE="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/css/bootstrap-theme.min.css",
+      "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s7kj0ytsxBKSuSaMKmHfQZLxmh3qtRVzK1km6ig5kC0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 15:48:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-s7kj0ytsxBKSuSaMKmHfQZLxmh3qtRVzK1km6ig5kC0="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/css/bootstrap-theme.min.css.kfyfhdxh97.map",
+      "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5535"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8E6OsUWRNMzsJQE8ChLBEDe/FbE48DnqxqzNic75ALo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 15:48:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kfyfhdxh97"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/css/bootstrap-theme.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8E6OsUWRNMzsJQE8ChLBEDe/FbE48DnqxqzNic75ALo="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/css/bootstrap-theme.min.css.map",
+      "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5535"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8E6OsUWRNMzsJQE8ChLBEDe/FbE48DnqxqzNic75ALo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 15:48:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8E6OsUWRNMzsJQE8ChLBEDe/FbE48DnqxqzNic75ALo="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/css/bootstrap-theme.min.hncdx5t4mz.css",
+      "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s7kj0ytsxBKSuSaMKmHfQZLxmh3qtRVzK1km6ig5kC0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 15:48:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hncdx5t4mz"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/css/bootstrap-theme.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-s7kj0ytsxBKSuSaMKmHfQZLxmh3qtRVzK1km6ig5kC0="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/css/bootstrap-theme.z4giugmkw0.css",
+      "AssetFile": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26135"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zV9PFwSVxm/pFuTNckKIh9wgMQP8fXUcFf/7rL80aHs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 15:48:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z4giugmkw0"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/css/bootstrap-theme.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zV9PFwSVxm/pFuTNckKIh9wgMQP8fXUcFf/7rL80aHs="
         }
       ]
     },

@@ -22,6 +22,7 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
     options.Password.RequireLowercase = true;
 })
 .AddEntityFrameworkStores<LibraryDbContext>();
+builder.Services.AddScoped<AdminOnlyAttribute>();
 
 builder.Services.AddControllersWithViews();
 

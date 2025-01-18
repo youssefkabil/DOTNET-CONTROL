@@ -1,5 +1,5 @@
 html.color-header .top-header .navbar .navbar-nav .nav-link {
-	color: #fff
+	color: #198754
 }
 
 html.color-header .top-header, html.color-header .top-header .topbar-logo-header {
@@ -11,15 +11,15 @@ html.color-header .top-header .topbar-logo-header img {
 }
 
 html.color-header .top-header .logo-text, html.color-header .nav-container .mobile-topbar-header .logo-text, html.color-header .top-header .toggle-icon {
-    color: #fcfcfc;
+    color:#198754
 }
 
 
 
-html.color-header .mobile-toggle-icon, html.color-header .search-toggle-icon, html.color-header .projects, html.color-header .notifications, html.color-header .messages, html.color-header .top-header .navbar .user-setting {
-    color: #1a2232;
-    background-color: #ffffff;
-}
+	html.color-header .mobile-toggle-icon, html.color-header .search-toggle-icon, html.color-header .projects, html.color-header .notifications, html.color-header .messages, html.color-header .top-header .navbar .user-setting {
+		color: #1a2232;
+		background-color: #198754;
+	}
 
 html.color-header .top-header .navbar .user-name {
     color: #1a2232;
@@ -80,29 +80,29 @@ html.color-header .mobile-toggle-menu {
 .switcher-body .headercolor8 {
 	background: #ff6632!important
 }
-html.headercolor1 .top-header .navbar{
-	background: #3361ff
+html.headercolor1 .top-header .navbar {
+	background: #198754
 }
-html.headercolor2 .top-header .navbar{
-	background: #1f283c
+html.headercolor2 .top-header .navbar {
+	background: #198754
 }
 html.headercolor3 .top-header .navbar {
-	background: #e72e2e
+	background: #198754
 }
 html.headercolor4 .top-header .navbar {
 	background: #198754
 }
 html.headercolor5 .top-header .navbar {
-	background: #8932ff
+	background: #198754
 }
 html.headercolor6 .top-header .navbar {
-	background: #795548
+	background: #198754
 }
 html.headercolor7 .top-header .navbar {
-	background: #d3094e
+	background: #198754
 }
 html.headercolor8 .top-header .navbar {
-	background: #ff6632
+	background: #198754
 }
 
 

@@ -50,24 +50,24 @@ a {
 
 /* Header */
 
-.top-header .navbar{
-    position: fixed;
-    top: 0;
-    left: 250px;
-    right: 0;
-    background-color: #f7f8fa;
-    border-bottom: 1px solid #e2e3e4;
-    background-clip: padding-box;
-    height: 60px;
-    z-index: 10;
-    padding: 0 1.5rem;
-    transition: all .2s;
+.top-header .navbar {
+	position: fixed;
+	top: 0;
+	left: 250px;
+	right: 0;
+	background-color: #198754;
+	border-bottom: 1px solid #e2e3e4;
+	background-clip: padding-box;
+	height: 60px;
+	z-index: 10;
+	padding: 0 1.5rem;
+	transition: all .2s;
 }
 
 
 .top-header .navbar .top-navbar .nav-link {
 
-    color: #293445;
+    color: #3ba127;
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 500;
@@ -396,13 +396,13 @@ a {
     margin-left: 10px;
     margin-bottom: 0;
     letter-spacing: 1px;
-    color: #3461ff;
+    color: #3ba127;
 }
 
 .toggle-icon {
     font-size: 22px;
     cursor: pointer;
-    color: #3461ff;
+    color: #3ba127;
 }
 
 
@@ -502,7 +502,7 @@ a {
 .sidebar-wrapper .metismenu a:active,
 .sidebar-wrapper .metismenu a:focus,
 .sidebar-wrapper .metismenu a:hover {
-	color: #3461ff;
+	color: #3ba127;
 	text-decoration: none;
 	background-color: rgb(52 97 255 / 10%);
 }
@@ -659,7 +659,7 @@ a {
 
 .fm-menu .list-group a:hover {
 	background-color: rgb(52 97 255 / 15%);
-	color: #3461ff;
+	color: #3ba127;
 	transition: all .2s ease-out
 }
 

@@ -2241,6 +2241,10 @@
       "PackagePath": "staticwebassets\\images\\avatars\\avatar-9.png"
     },
     {
+      "Id": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\images\\emsi.jpg",
+      "PackagePath": "staticwebassets\\images\\emsi.jpg"
+    },
+    {
       "Id": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\images\\emsi.png",
       "PackagePath": "staticwebassets\\images\\emsi.png"
     },
@@ -2435,6 +2439,22 @@
     {
       "Id": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
     },
     {
       "Id": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
