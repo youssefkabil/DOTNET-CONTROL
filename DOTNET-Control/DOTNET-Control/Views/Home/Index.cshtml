@@ -1,8 +1,142 @@
-﻿@{
+﻿@model List<DOTNET_Control.Models.Book>
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    /* Superposition noire semi-transparente */
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        background-color: rgba(0, 0, 0, 0.5); /* Noir avec 50% de transparence */
+        z-index: 1; /* Place la superposition au-dessus de l'image */
+    }
+
+    /* S'assurer que les légendes apparaissent au-dessus de la superposition */
+    .carousel-caption {
+        position: relative;
+        z-index: 2;
+    }
+
+</style>
+
+<!-- Carousel Section -->
+<div class="carousel slide" id="carouselExampleCaptions" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="overlay"></div>
+            <img src="~/images/background.png" class="d-block w-100" style="height: 60vh;" alt="First Slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First Slide Label</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="overlay"></div>
+            <img src="~/images/background.png" class="d-block w-100" style="height: 60vh;" alt="Second Slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Second Slide Label</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="overlay"></div>
+            <img src="~/images/background.png" class="d-block w-100" style="height: 60vh;" alt="Third Slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Third Slide Label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
 </div>
+
+
+
+
+<!-- Books Section -->
+<div class="d-flex justify-content-center align-items-center h-64 mt-5">
+    <div class="text-center">
+        <p class="h3 mb-2 font-weight-bold">Books</p>
+        <div class="w-25 mx-auto mb-2" style="height: 2px; background-color: #007bff;"></div>
+    </div>
+</div>
+
+<!-- Books Cards -->
+<!-- Books Cards -->
+<div class="d-flex justify-content-center flex-wrap">
+    @if (Model != null && Model.Any()) // Vérifie si le modèle contient des données
+    {
+        @foreach (var book in Model.Take(3)) // Limite à 3 livres
+        {
+            <div class="card m-3 shadow-sm" style="width: 18rem; flex: 0 0 auto;">
+                <img class="card-img-top" src="~/images/book1.jpg" alt="@book.Title" />
+                <div class="card-body text-center">
+                    <h6 class="card-title mb-2">@book.Title</h6>
+                    <p class="card-text mb-1"><strong>Auteur:</strong> @(book.Author?.Name ?? "Auteur inconnu")</p>
+                    <p class="card-text mb-2"><strong>Catégorie:</strong> @(book.Category?.Name ?? "Catégorie inconnue")</p>
+
+                    @if (User.Identity != null && User.Identity.IsAuthenticated)
+                    {
+                        <!-- Bouton "Ajouter aux favoris" pour les utilisateurs connectés -->
+                        <button class="btn bg-white  btn-sm favorite-button" data-bookid="@book.Id">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    }
+
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p class="text-center">Aucun livre disponible.</p>
+    }
+</div>
+
+
+
+
+
+
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $(".favorite-button").click(function () {
+                var bookId = $(this).data("bookid");
+                var button = $(this);
+
+                // Ajouter le livre aux favoris
+                $.ajax({
+                    type: "POST",
+                    url: "/Favoris/AddToFavoris", // L'action dans FavorisController
+                    data: { bookId: bookId },
+                    success: function (response) {
+                        button.find("i").css("color", "red"); // Change la couleur du cœur
+
+                    },
+                    error: function () {
+                        alert("Erreur lors de l'ajout aux favoris.");
+                    }
+                });
+            });
+        });
+    </script>
+}

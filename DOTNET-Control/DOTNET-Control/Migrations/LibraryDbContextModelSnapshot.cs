@@ -93,13 +93,13 @@ namespace DOTNET_Control.Migrations
                         {
                             Id = "00000000-ffff-aaaa-bbbb-cccccccccccc",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "289e5afd-e9fc-4b47-849a-69f1b9736765",
+                            ConcurrencyStamp = "64acdcb8-64fd-4d52-adee-e7ada64e3227",
                             Email = "admin@library.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LIBRARY.COM",
                             NormalizedUserName = "KABIL YOUSSEF",
-                            PasswordHash = "AQAAAAIAAYagAAAAEG+phoAaG7dVoTmMg/fpe3CiBZwm+Qib8zbBEz2aBKLds5gfbtI/Bk5vxGhXduwBRw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEA6dcc9ZemUitihwjvqk3iQYu6nAga42UiqZ+8jFW9qjcND4mi2l6cG/h3fpt0gT/A==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "f1e1d2c3-b4a5-6789-abcd-ef0123456789",
                             TwoFactorEnabled = false,
@@ -156,6 +156,10 @@ namespace DOTNET_Control.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("PublisherId")
                         .HasColumnType("int");
 
@@ -179,6 +183,7 @@ namespace DOTNET_Control.Migrations
                             Id = 1,
                             AuthorId = 1,
                             CategoryId = 1,
+                            ImageUrl = "",
                             PublisherId = 1,
                             Title = "Harry Potter and the Sorcerer's Stone"
                         },
@@ -187,6 +192,7 @@ namespace DOTNET_Control.Migrations
                             Id = 2,
                             AuthorId = 2,
                             CategoryId = 1,
+                            ImageUrl = "",
                             PublisherId = 2,
                             Title = "A Game of Thrones"
                         },
@@ -195,6 +201,7 @@ namespace DOTNET_Control.Migrations
                             Id = 3,
                             AuthorId = 3,
                             CategoryId = 1,
+                            ImageUrl = "",
                             PublisherId = 3,
                             Title = "The Hobbit"
                         });
@@ -232,6 +239,33 @@ namespace DOTNET_Control.Migrations
                             Id = 3,
                             Name = "Mystery"
                         });
+                });
+
+            modelBuilder.Entity("DOTNET_Control.Models.Favoris", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("AddedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Favorites");
                 });
 
             modelBuilder.Entity("DOTNET_Control.Models.Publisher", b =>
@@ -445,6 +479,25 @@ namespace DOTNET_Control.Migrations
                     b.Navigation("Category");
 
                     b.Navigation("Publisher");
+                });
+
+            modelBuilder.Entity("DOTNET_Control.Models.Favoris", b =>
+                {
+                    b.HasOne("DOTNET_Control.Models.Book", "Book")
+                        .WithMany()
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DOTNET_Control.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("DOTNET_Control.Models.UserBook", b =>

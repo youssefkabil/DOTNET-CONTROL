@@ -1,0 +1,66 @@
+﻿@model IEnumerable<DOTNET_Control.Models.Favoris>
+
+<div class="container my-4">
+    <div class="row justify-content-center">
+        @if (Model != null && Model.Any()) // Vérifie si le modèle contient des données
+        {
+            @foreach (var favoris in Model) // Itère sur chaque favori
+            {
+                var book = favoris.Book; // Accède au livre associé au favori
+
+                <div class="col-md-3 mb-3">
+                    <div class="card border shadow-sm">
+                        <img src="~/images/book1.jpg" class="card-img-top" alt="@book.Title" style="height: 200px; object-fit: cover;" />
+                        <div class="card-body text-center">
+                            <h6 class="product-title mb-2">@book.Title</h6>
+                            <p class="product-price fs-5 mb-1"><strong>Auteur:</strong> @book.Author?.Name ?? "Auteur inconnu"</p>
+                            <p class="product-price fs-5 mb-2"><strong>Catégorie:</strong> @book.Category?.Name ?? "Catégorie inconnue"</p>
+                            <div class="rating mb-0">
+                                @for (var i = 0; i < 5; i++)
+                                {
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                }
+                            </div>
+                            <!-- Bouton "Retirer des favoris" -->
+                            <button class="btn btn-outline-danger btn-sm remove-favorite" data-bookid="@book.Id">
+                                Retirer des favoris
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p class="text-center">Aucun livre disponible.</p>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $(".remove-favorite").click(function () {
+                var bookId = $(this).data("bookid");
+                var button = $(this);
+
+                // Retirer le livre des favoris
+                $.ajax({
+                    type: "POST",
+                    url: "/Favoris/RemoveFromFavoris", // L'action dans FavorisController
+                    data: { bookId: bookId },
+                    success: function (response) {
+                        if (response.success) {
+                            button.closest('.col-md-3').remove(); // Supprimer la carte du DOM
+                        } else {
+                            alert("Erreur lors du retrait des favoris.");
+                        }
+                    },
+                    error: function () {
+                        alert("Erreur lors de la requête AJAX.");
+                    }
+                });
+            });
+        });
+    </script>
+}

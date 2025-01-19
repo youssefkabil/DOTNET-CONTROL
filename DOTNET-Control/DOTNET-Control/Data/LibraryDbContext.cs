@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Emit;
 
 public class LibraryDbContext : IdentityDbContext<ApplicationUser>
 {
@@ -12,10 +13,23 @@ public class LibraryDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<Publisher> Publishers { get; set; }
     public DbSet<Category> Categories { get; set; }
     public DbSet<UserBook> UserBooks { get; set; }
+    public DbSet<Favoris> Favorites { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
+
+        builder.Entity<Favoris>()
+             .HasOne(f => f.Book)
+             .WithMany()
+             .HasForeignKey(f => f.BookId);
+        builder.Entity<Favoris>()
+            .HasOne(f => f.User)
+            .WithMany()
+            .HasForeignKey(f => f.UserId);
+
+
+
 
         builder.Entity<UserBook>()
             .HasKey(ub => new { ub.UserId, ub.BookId });
@@ -94,11 +108,12 @@ public class LibraryDbContext : IdentityDbContext<ApplicationUser>
                 EmailConfirmed = true,
                 PasswordHash = hasher.HashPassword(null, "Admin123"),
                 SecurityStamp = "f1e1d2c3-b4a5-6789-abcd-ef0123456789"
-                ,isAdmin=true,
+                ,
+                isAdmin = true,
 
             }
         );
     }
 
-    
+
 }

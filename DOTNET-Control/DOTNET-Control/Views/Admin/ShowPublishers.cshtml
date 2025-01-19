@@ -222,7 +222,7 @@
 
         const books = element.getAttribute('data-books').split(", ");
         const booksList = document.getElementById('viewPublisherBooks');
-        booksList.innerHTML = '';  // Clear any previous content
+        booksList.innerHTML = '';  
 
         if (books.length > 0 && books[0] !== "") {
             const ul = document.createElement('ul');

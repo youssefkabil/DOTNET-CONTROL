@@ -1,0 +1,64 @@
+﻿@model List<DOTNET_Control.Models.Book>
+
+<div class="container my-4">
+    <div class="row justify-content-center">
+        @if (Model != null && Model.Any()) // Vérifie si le modèle contient des données
+        {
+            @foreach (var book in Model) // Limite à 6 livres pour plus de cartes visibles
+            {
+                <div class="col">
+                    <div class="card border shadow-none mb-0">
+                        <div class="card-body text-center">
+                            <img src="~/images/book1.jpg" class="img-fluid mb-3 w-50 h-50" alt="" />
+                            <h6 class="product-title">@book.Title</h6>
+                            <p class="product-price fs-5 mb-1"><span><strong>Auteur:</strong> @(book.Author?.Name ?? "Auteur inconnu")</span></p>
+                            <div class="rating mb-0">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+
+                            <div class="actions d-flex align-items-center justify-content-center gap-2 mt-3">
+                                @if (User.Identity != null && User.Identity.IsAuthenticated)
+                                {
+                                    <button class="btn btn-sm btn-outline-danger favorite-button" data-bookid="@book.Id">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p class="text-center">Aucun livre disponible.</p>
+        }
+    </div>
+</div>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $(".favorite-button").click(function () {
+                var bookId = $(this).data("bookid");
+                var button = $(this);
+
+                // Ajouter le livre aux favoris
+                $.ajax({
+                    type: "POST",
+                    url: "/Favoris/AddToFavoris", // L'action dans FavorisController
+                    data: { bookId: bookId },
+                    success: function (response) {
+                        button.find("i").css("color", "red"); // Change la couleur du cœur
+                    },
+                    error: function () {
+                        alert("Erreur lors de l'ajout aux favoris.");
+                    }
+                    });
+                    });
+                });
+    </script>
+}
