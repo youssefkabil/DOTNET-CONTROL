@@ -1093,6 +1093,7 @@ wwwroot\images\avatars\avatar-8.png
 wwwroot\images\avatars\avatar-9.png
 wwwroot\images\background.png
 wwwroot\images\book1.jpg
+wwwroot\images\crime and punishement.jpeg
 wwwroot\images\emsi.jpg
 wwwroot\images\emsi.png
 wwwroot\images\error\404.jpg
@@ -1104,6 +1105,8 @@ wwwroot\images\error\auth-img-register3.png
 wwwroot\images\error\forgot-password-frent-img.jpg
 wwwroot\images\error\login-img.jpg
 wwwroot\images\gallery\emsi.jpg
+wwwroot\images\start with why.jpg
+wwwroot\images\the stranger.jpg
 wwwroot\images2\avatars\avatar-1.png
 wwwroot\images2\avatars\avatar-10.png
 wwwroot\images2\avatars\avatar-11.png

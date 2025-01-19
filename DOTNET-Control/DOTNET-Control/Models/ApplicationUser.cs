@@ -7,5 +7,7 @@
     {
         public bool isAdmin { get; set; } // Add this property
         public ICollection<UserBook> UserBooks { get; set; }
+        public ICollection<Favoris> Favorites { get; set; }
+
     }
 }

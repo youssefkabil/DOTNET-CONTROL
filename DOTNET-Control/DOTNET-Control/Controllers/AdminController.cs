@@ -54,14 +54,26 @@ namespace DOTNET_Control.Controllers
             return View();
         }
 
-        // POST: Admin/CreateBook
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("CreateBook")]
-        public async Task<IActionResult> CreateBook(Book book)
+        public async Task<IActionResult> CreateBook(Book book, IFormFile ImageFile)
         {
             try
             {
+                if (ImageFile != null && ImageFile.Length > 0)
+                {
+                    var fileName = Path.GetFileName(ImageFile.FileName);
+                    var filePath = Path.Combine("wwwroot/images", fileName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageFile.CopyToAsync(stream);
+                    }
+
+                    book.ImageUrl = $"images/{fileName}";
+                }
+
                 _context.Add(book);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -74,6 +86,7 @@ namespace DOTNET_Control.Controllers
                 return View(book);
             }
         }
+
         // DELETE: Admin/DeleteBook/5
         [HttpDelete]
         [Route("DeleteBook/{id}")]
@@ -297,12 +310,24 @@ namespace DOTNET_Control.Controllers
         public async Task<IActionResult> ShowUsers()
         {
             var users = await _context.Users
-                .Include(u => u.UserBooks)
-                .ThenInclude(ub => ub.Book)
+                .Include(u => u.Favorites)
+                    .ThenInclude(f => f.Book)
+                        .ThenInclude(b => b.Author)
                 .ToListAsync();
+
+            // Debugging: Log user favorites to the console
+            foreach (var user in users)
+            {
+                Console.WriteLine($"User: {user.UserName}");
+                foreach (var favorite in user.Favorites)
+                {
+                    Console.WriteLine($" - Favorite Book: {favorite.Book?.Title}, Author: {favorite.Book?.Author?.Name}");
+                }
+            }
 
             return View(users);
         }
+
 
         [HttpDelete]
         [Route("DeleteUser/{id}")]

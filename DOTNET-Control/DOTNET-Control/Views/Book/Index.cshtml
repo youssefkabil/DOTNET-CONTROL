@@ -9,7 +9,8 @@
                 <div class="col">
                     <div class="card border shadow-none mb-0">
                         <div class="card-body text-center">
-                            <img src="~/images/book1.jpg" class="img-fluid mb-3 w-50 h-50" alt="" />
+                            <img src="@Url.Content($"~/{book.ImageUrl}")" class="img-fluid mb-3 w-50 h-50" alt="" />
+
                             <h6 class="product-title">@book.Title</h6>
                             <p class="product-price fs-5 mb-1"><span><strong>Auteur:</strong> @(book.Author?.Name ?? "Auteur inconnu")</span></p>
                             <div class="rating mb-0">

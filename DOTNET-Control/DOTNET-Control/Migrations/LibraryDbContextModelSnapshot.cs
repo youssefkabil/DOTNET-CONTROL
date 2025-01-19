@@ -93,13 +93,13 @@ namespace DOTNET_Control.Migrations
                         {
                             Id = "00000000-ffff-aaaa-bbbb-cccccccccccc",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "64acdcb8-64fd-4d52-adee-e7ada64e3227",
+                            ConcurrencyStamp = "ba114cd7-ddd5-4be6-b232-5e59aefa9b68",
                             Email = "admin@library.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LIBRARY.COM",
                             NormalizedUserName = "KABIL YOUSSEF",
-                            PasswordHash = "AQAAAAIAAYagAAAAEA6dcc9ZemUitihwjvqk3iQYu6nAga42UiqZ+8jFW9qjcND4mi2l6cG/h3fpt0gT/A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEPaI89ur5nUBpbPqLFIZKcKomMdkVLKiGCAErcNF/mS7YNtp5Oyrnf4yYajtXkChnQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "f1e1d2c3-b4a5-6789-abcd-ef0123456789",
                             TwoFactorEnabled = false,
@@ -183,7 +183,7 @@ namespace DOTNET_Control.Migrations
                             Id = 1,
                             AuthorId = 1,
                             CategoryId = 1,
-                            ImageUrl = "",
+                            ImageUrl = "images/book1.jpg",
                             PublisherId = 1,
                             Title = "Harry Potter and the Sorcerer's Stone"
                         },
@@ -192,7 +192,7 @@ namespace DOTNET_Control.Migrations
                             Id = 2,
                             AuthorId = 2,
                             CategoryId = 1,
-                            ImageUrl = "",
+                            ImageUrl = "images/book1.jpg",
                             PublisherId = 2,
                             Title = "A Game of Thrones"
                         },
@@ -201,7 +201,7 @@ namespace DOTNET_Control.Migrations
                             Id = 3,
                             AuthorId = 3,
                             CategoryId = 1,
-                            ImageUrl = "",
+                            ImageUrl = "images/book1.jpg",
                             PublisherId = 3,
                             Title = "The Hobbit"
                         });
@@ -252,6 +252,9 @@ namespace DOTNET_Control.Migrations
                     b.Property<DateTime>("AddedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<int>("BookId")
                         .HasColumnType("int");
 
@@ -260,6 +263,8 @@ namespace DOTNET_Control.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
 
                     b.HasIndex("BookId");
 
@@ -483,6 +488,10 @@ namespace DOTNET_Control.Migrations
 
             modelBuilder.Entity("DOTNET_Control.Models.Favoris", b =>
                 {
+                    b.HasOne("DOTNET_Control.Models.ApplicationUser", null)
+                        .WithMany("Favorites")
+                        .HasForeignKey("ApplicationUserId");
+
                     b.HasOne("DOTNET_Control.Models.Book", "Book")
                         .WithMany()
                         .HasForeignKey("BookId")
@@ -572,6 +581,8 @@ namespace DOTNET_Control.Migrations
 
             modelBuilder.Entity("DOTNET_Control.Models.ApplicationUser", b =>
                 {
+                    b.Navigation("Favorites");
+
                     b.Navigation("UserBooks");
                 });
 

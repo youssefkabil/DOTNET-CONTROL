@@ -85,7 +85,7 @@
         @foreach (var book in Model.Take(3)) // Limite à 3 livres
         {
             <div class="card m-3 shadow-sm" style="width: 18rem; flex: 0 0 auto;">
-                <img class="card-img-top" src="~/images/book1.jpg" alt="@book.Title" />
+                <img class="card-img-top" src="@Url.Content($"~/{book.ImageUrl}")" alt="@book.Title" />
                 <div class="card-body text-center">
                     <h6 class="card-title mb-2">@book.Title</h6>
                     <p class="card-text mb-1"><strong>Auteur:</strong> @(book.Author?.Name ?? "Auteur inconnu")</p>

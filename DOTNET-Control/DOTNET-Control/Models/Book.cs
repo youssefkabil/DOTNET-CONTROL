@@ -11,7 +11,7 @@
         public int CategoryId { get; set; }
         public Category Category { get; set; }
         public ICollection<UserBook> UserBooks { get; set; }
-        public string ImageUrl { get; set; } = ""; // Valeur par défaut vide
+        public string ImageUrl { get; set; } = "images/book1.jpg"; // Default value updated
 
     }
 

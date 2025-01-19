@@ -4749,6 +4749,10 @@
       "PackagePath": "staticwebassets\\images\\book1.jpg"
     },
     {
+      "Id": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\images\\crime and punishement.jpeg",
+      "PackagePath": "staticwebassets\\images\\crime and punishement.jpeg"
+    },
+    {
       "Id": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\images\\emsi.jpg",
       "PackagePath": "staticwebassets\\images\\emsi.jpg"
     },
@@ -4791,6 +4795,14 @@
     {
       "Id": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\images\\gallery\\emsi.jpg",
       "PackagePath": "staticwebassets\\images\\gallery\\emsi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\images\\start with why.jpg",
+      "PackagePath": "staticwebassets\\images\\start with why.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\images\\the stranger.jpg",
+      "PackagePath": "staticwebassets\\images\\the stranger.jpg"
     },
     {
       "Id": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\wwwroot\\js2\\app-chat-box.js",

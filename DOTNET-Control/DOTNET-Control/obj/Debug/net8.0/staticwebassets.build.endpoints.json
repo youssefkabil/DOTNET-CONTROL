@@ -92095,6 +92095,88 @@
       ]
     },
     {
+      "Route": "images/crime and punishement.jpeg",
+      "AssetFile": "images/crime and punishement.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "259681"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9rmto1z9vlABtyazNy//gQLk2IHnZyLkPJqi8Pn35ec=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Jan 2025 23:13:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9rmto1z9vlABtyazNy//gQLk2IHnZyLkPJqi8Pn35ec="
+        }
+      ]
+    },
+    {
+      "Route": "images/crime and punishement.u2lls0grzr.jpeg",
+      "AssetFile": "images/crime and punishement.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "259681"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9rmto1z9vlABtyazNy//gQLk2IHnZyLkPJqi8Pn35ec=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Jan 2025 23:13:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u2lls0grzr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9rmto1z9vlABtyazNy//gQLk2IHnZyLkPJqi8Pn35ec="
+        },
+        {
+          "Name": "label",
+          "Value": "images/crime and punishement.jpeg"
+        }
+      ]
+    },
+    {
       "Route": "images/emsi.21ggxo2qcw.png",
       "AssetFile": "images/emsi.png",
       "Selectors": [],
@@ -92993,6 +93075,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-od2GPonEypgtGA/Z8LS2pRXpuDBEnzvtrNB/cVRD5eo="
+        }
+      ]
+    },
+    {
+      "Route": "images/start with why.jpg",
+      "AssetFile": "images/start with why.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "155958"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"otmvaFk43aw46DavB+iWBGMOR7IgQBXs8KzaYyypq2k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Jan 2025 23:06:51 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-otmvaFk43aw46DavB+iWBGMOR7IgQBXs8KzaYyypq2k="
+        }
+      ]
+    },
+    {
+      "Route": "images/start with why.ykfj0hqu2q.jpg",
+      "AssetFile": "images/start with why.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "155958"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"otmvaFk43aw46DavB+iWBGMOR7IgQBXs8KzaYyypq2k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Jan 2025 23:06:51 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ykfj0hqu2q"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-otmvaFk43aw46DavB+iWBGMOR7IgQBXs8KzaYyypq2k="
+        },
+        {
+          "Name": "label",
+          "Value": "images/start with why.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/the stranger.jpg",
+      "AssetFile": "images/the stranger.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "254487"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RDqmNKz7dsD7DMhvr+G6f9XOHpOScvlQouxMlAtS/yA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Jan 2025 23:17:33 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RDqmNKz7dsD7DMhvr+G6f9XOHpOScvlQouxMlAtS/yA="
+        }
+      ]
+    },
+    {
+      "Route": "images/the stranger.wvk4bi1wuq.jpg",
+      "AssetFile": "images/the stranger.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "254487"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RDqmNKz7dsD7DMhvr+G6f9XOHpOScvlQouxMlAtS/yA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Jan 2025 23:17:33 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wvk4bi1wuq"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RDqmNKz7dsD7DMhvr+G6f9XOHpOScvlQouxMlAtS/yA="
+        },
+        {
+          "Name": "label",
+          "Value": "images/the stranger.jpg"
         }
       ]
     },

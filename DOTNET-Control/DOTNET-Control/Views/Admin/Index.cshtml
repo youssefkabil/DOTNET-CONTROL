@@ -102,6 +102,7 @@
             <table class="table align-middle table-striped">
                 <thead>
                     <tr>
+                        <th>Image</th>
                         <th>Title</th>
                         <th>Author</th>
                         <th>Publisher</th>
@@ -121,10 +122,19 @@
                         @foreach (var book in Model)
                         {
                             <tr>
-                                <td>@book.Title</td>
-                                <td>@book.Author?.Name</td>
-                                <td>@book.Publisher?.Name</td>
-                                <td>@book.Category?.Name</td>
+                                <td class="productlist my-2">
+                                    <a class="d-flex align-items-center gap-2" href="#">
+                                        <div class="product-box">
+                                            
+                                            <img src="@Url.Content($"~/{book.ImageUrl}")" alt="Book Image">
+
+                                        </div>
+                                    </a>
+                                </td>
+                                <td><span>@book.Title</span></td>
+                                <td><span>@book.Author?.Name</span></td>
+                                <td><span>@book.Publisher?.Name</span></td>
+                                <td><span>@book.Category?.Name</span></td>
                                 <td>
                                     <div class="d-flex align-items-center gap-3 fs-6">
                                         <a href="javascript:;" class="text-primary"

@@ -24,17 +24,25 @@ namespace DOTNET_Control.Controllers
         {
             var userId = _userManager.GetUserId(User);
 
+            // Check if the book is already in the user's favorites
             if (!_context.Favorites.Any(f => f.BookId == bookId && f.UserId == userId))
             {
-                var favoris = new Favoris
-                {
-                    BookId = bookId,
-                    UserId = userId,
-                    AddedDate = DateTime.Now
-                };
+                // Find the ApplicationUser associated with the userId
+                var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
 
-                _context.Favorites.Add(favoris);
-                await _context.SaveChangesAsync();
+                if (user != null)
+                {
+                    var favoris = new Favoris
+                    {
+                        BookId = bookId,
+                        UserId = userId,
+                        User = user, // Link the ApplicationUser entity
+                        AddedDate = DateTime.Now
+                    };
+
+                    _context.Favorites.Add(favoris);
+                    await _context.SaveChangesAsync();
+                }
             }
 
             return Json(new { success = true });
@@ -45,7 +53,10 @@ namespace DOTNET_Control.Controllers
         {
             var userId = _userManager.GetUserId(User);
 
-            var favoris = _context.Favorites.FirstOrDefault(f => f.BookId == bookId && f.UserId == userId);
+            var favoris = _context.Favorites
+                .Include(f => f.User) // Include the related ApplicationUser
+                .FirstOrDefault(f => f.BookId == bookId && f.UserId == userId);
+
             if (favoris != null)
             {
                 _context.Favorites.Remove(favoris);
@@ -59,14 +70,15 @@ namespace DOTNET_Control.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            // Récupérer l'ID de l'utilisateur connecté
+            // Get the ID of the logged-in user
             var userId = _userManager.GetUserId(User);
 
-            // Récupérer la liste des livres favoris de cet utilisateur
+            // Retrieve the user's list of favorite books
             var favoris = await _context.Favorites
                 .Where(f => f.UserId == userId)
-                .Include(f => f.Book) // Inclure les informations sur le livre
-                .ThenInclude(b => b.Author) // Inclure les informations sur l'auteur (facultatif)
+                .Include(f => f.Book) // Include book details
+                .ThenInclude(b => b.Author) // Include author details (optional)
+                .Include(f => f.User) // Include user details (optional for debugging)
                 .ToListAsync();
 
             return View(favoris);
