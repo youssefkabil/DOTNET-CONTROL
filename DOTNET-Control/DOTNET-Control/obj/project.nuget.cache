@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xfTDMRDXMsw=",
+  "dgSpecHash": "G9e3uMpuYnc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\TUFF\\Desktop\\emsicycle\\S7\\DOTNET\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\DOTNET-Control.csproj",
+  "projectFilePath": "C:\\Users\\TUFF\\Desktop\\dotnetgit\\DOTNET-CONTROL\\DOTNET-Control\\DOTNET-Control\\DOTNET-Control.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TUFF\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\TUFF\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

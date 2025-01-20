@@ -311,19 +311,9 @@ namespace DOTNET_Control.Controllers
         {
             var users = await _context.Users
                 .Include(u => u.Favorites)
-                    .ThenInclude(f => f.Book)
-                        .ThenInclude(b => b.Author)
+                .ThenInclude(f => f.Book)
+                .ThenInclude(b => b.Author)
                 .ToListAsync();
-
-            // Debugging: Log user favorites to the console
-            foreach (var user in users)
-            {
-                Console.WriteLine($"User: {user.UserName}");
-                foreach (var favorite in user.Favorites)
-                {
-                    Console.WriteLine($" - Favorite Book: {favorite.Book?.Title}, Author: {favorite.Book?.Author?.Name}");
-                }
-            }
 
             return View(users);
         }

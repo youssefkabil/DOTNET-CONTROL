@@ -17,117 +17,117 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DOTNET_Control
 build_property.RootNamespace = DOTNET_Control
-build_property.ProjectDir = C:\Users\TUFF\Desktop\emsicycle\S7\DOTNET\DOTNET-CONTROL\DOTNET-Control\DOTNET-Control\
+build_property.ProjectDir = C:\Users\TUFF\Desktop\dotnetgit\DOTNET-CONTROL\DOTNET-Control\DOTNET-Control\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\TUFF\Desktop\emsicycle\S7\DOTNET\DOTNET-CONTROL\DOTNET-Control\DOTNET-Control
+build_property.MSBuildProjectDirectory = C:\Users\TUFF\Desktop\dotnetgit\DOTNET-CONTROL\DOTNET-Control\DOTNET-Control
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Account/Login.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Account/Register.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Admin/CreateBook.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Admin/CreateBook.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlQm9vay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Admin/Index.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Admin/ShowAuthors.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Admin/ShowAuthors.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2hvd0F1dGhvcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Admin/ShowCategories.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Admin/ShowCategories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2hvd0NhdGVnb3JpZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Admin/ShowPublishers.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Admin/ShowPublishers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2hvd1B1Ymxpc2hlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Admin/ShowUsers.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Admin/ShowUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2hvd1VzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Book/Index.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Book/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Favoris/Index.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Favoris/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3Jpc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Home/Index.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Home/Privacy.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Shared/Error.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/_ViewImports.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/_ViewStart.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TUFF/Desktop/emsicycle/S7/DOTNET/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Shared/_Layout.cshtml]
+[C:/Users/TUFF/Desktop/dotnetgit/DOTNET-CONTROL/DOTNET-Control/DOTNET-Control/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-gm5ca6uiqf
